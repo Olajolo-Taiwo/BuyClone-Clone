@@ -1,3 +1,11 @@
+div{
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
 dl {
   margin-top: 40px;
   position: relative;
@@ -19,7 +27,7 @@ dt{
 }
 
 dd{
-  font-size: 16px;
+  font-size: 1.1em;
   color: #505050;
   line-height: 24px;
   margin-bottom: 0;
@@ -83,3 +91,4 @@ button{
   background-image: linear-gradient(180deg, rgb(108, 132, 241) 0%, rgb(169, 88, 227) 100%);
   color: white;
 }
+
