@@ -18,12 +18,29 @@ dl:before {
   top: 0;
   background-image: linear-gradient(180deg, rgb(108, 132, 241) 0%, rgb(169, 88, 227) 100%);
 }
+
 dt{
   position: relative;
   margin-top: 20px;
   padding-left: 35px;
   font-size: 18px;
   color: rgb(37, 37, 37);
+}
+dt:before {
+  border-radius: 100%;
+  padding: 12px 12px;
+  left: 0;
+  top: 1px;
+  background-image: linear-gradient(90deg, #647dee 0%, #a754e2 100%);
+  opacity: 0.4;
+}
+dt:after {
+  border-radius: 100%;
+  padding: 8px 8px;
+  left: 4px;
+  top: 5px;
+  background-color: #fff;
+  z-index: 2;
 }
 
 dd{
@@ -33,27 +50,9 @@ dd{
   margin-bottom: 0;
 }
 
-
-dt:before {
-  border-radius: 100%;
-  padding: 12px 12px;
-  left: 0;
-  top: 1px;
-  background-image: linear-gradient(90deg, #647dee 0%, #a754e2 100%);
-  opacity: 0.4;
-}
-
-dt:after {
-  border-radius: 100%;
-  padding: 8px 8px;
-  left: 4px;
-  top: 5px;
-  background-color: #fff;
-  z-index: 2;
-}
 dl:before, dt:before,dt:after{
-    content: '';
   position: absolute;
+  content: '';
 }
 
 
