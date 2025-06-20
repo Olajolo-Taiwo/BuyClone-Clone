@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* // <weight>: Use a value from 300 to 700
+// <uniquifier>: Use a unique and descriptive class name */
+
+/* .jura-<uniquifier> {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+/* // <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name */
+
+/* .roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    line-height: 1.5;
+    color: #333;
+}
+
+.template-section {
+    background-color: rgb(248, 248, 254);
+    height: 100vh;
+    text-align: center;
+    padding: 50px;
+}
+
+.template-section-title,
+.get-started-section-title {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 42px;
+    color: rgb(52, 52, 52);
+    margin-bottom: 15px;
+}
+
+.template-section-text,
+.get-started-section-text {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    color: rgb(100, 125, 238);
+}
+
+.template-section-tagline,
+.get-started-section-tagline {
+    width: 62px;
+    height: 3px;
+    background-color: rgb(100, 125, 238);
+    justify-self: center;
+}
+
+.get-started-section-card,
+.template-section-card {
+    float: left;
+    width: 33.3333%;
+    box-sizing: border-box;
+    padding: 55px;
+}
+
+.template-section svg {
+    width: 36px;
+    fill: rgb(100, 125, 238);
+}
+
+.template-section-card-title,
+.get-started-section-card-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.template-section-card-text,
+.get-started-section-card-text {
+    font-size: 16px;
+}
+
+
+.get-started {
+    background-color: rgb(255, 255, 255);
+    padding: 80px 50px;
+    /* text-align: center; */
+}
+
+.get-started-section-card {
+    padding: 30px;
+}
+
+.get-started-section-card-text {
+    max-width: 350px;
+    color: rgb(80, 80, 80);
+}
+
+.get-started-section-card-number {
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 1;
+    color: rgb(100, 125, 238);
+}
+
+.get-started-section-tagline {
+    justify-self: left;
+}
+
+@media (max-width: 990px) {
+    .template-section-card {
+        width: 100%;
+        max-width: 500px;
+        float: none;
+    }
+}
+
+@media (max-width: 760px) {
+    .get-started-section-card {
+        width: 100%;
+        max-width: 100%;
+        float: none;
+    }
+
+    .get-started-section-title,
+    .get-started-section-text {
+        text-align: center;
+    }
+
+    .center-tag {
+        justify-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .get-started-section-title,
+    .template-section-title {
+        font-size: 32px;
+    }
+
+    .get-started-section-text,
+    .template-section-text {
+        font-size: 20px;
+    }
+}

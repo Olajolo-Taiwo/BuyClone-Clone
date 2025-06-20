@@ -1,7 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* // <weight>: Use a value from 300 to 700
+// <uniquifier>: Use a unique and descriptive class name */
+
+/* .jura-<uniquifier> {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+/* // <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name */
+
+/* .roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
 body {
   margin: 0;
   box-sizing: border-box;
-  font-family: Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 /* GENERAL STYLES*/
@@ -10,13 +39,16 @@ section {
 }
 
 /* GROUP STYLES*/
-.roadmap-section h2, .template-section h2 {
+.roadmap-section h2,
+.template-section h2 {
   font-size: 2.8em;
   text-align: center;
   margin-bottom: 20px;
   font-weight: 400;
 }
-.roadmap-section p, .template-section .tagline {
+
+.roadmap-section p,
+.template-section .tagline {
   color: rgb(93, 116, 221);
   position: relative;
   font-size: 1.1em;
@@ -24,7 +56,9 @@ section {
   text-align: center;
   font-weight: 400;
 }
-.roadmap-section p:before, .template-section .tagline:before {
+
+.roadmap-section p:before,
+.template-section .tagline:before {
   content: '';
   position: absolute;
   padding: 2px 30px;
@@ -34,7 +68,9 @@ section {
   background-image: linear-gradient(180deg, rgb(108, 132, 241) 0%, rgb(169, 88, 227) 100%);
   transform: translateX(-50%);
 }
-.roadmap-section button, .template-section button {
+
+.roadmap-section button,
+.template-section button {
   display: block;
   padding: 20px 40px;
   margin: auto;
@@ -45,135 +81,202 @@ section {
   color: white;
 }
 
- /*HERO SECTION STYLES */
+/*HERO SECTION STYLES */
 .hero-section {
-    /* padding: 50px; */
-    height: 100vh;
-    background: url('/assets/slide.jpg'), linear-gradient(to right, rgb(110, 175, 255, 0.2), rgb(213, 89, 255, 0.2));
-    background-size: cover;
-    background-blend-mode: overlay;
-    padding: 100px;
-    padding-top: 200px;
+  /* padding: 50px; */
+  height: 100vh;
+  background: url('/assets/slide.jpg'), linear-gradient(to right, rgb(110, 175, 255, 0.2), rgb(213, 89, 255, 0.2));
+  background-size: cover;
+  background-blend-mode: overlay;
+  padding: 100px;
+  padding-top: 200px;
 }
 
 
 .left,
 .right {
-    padding: 20px;
-    float: left;
-    width: 50%;
+  padding: 20px;
+  float: left;
+  width: 50%;
 }
 
-.left h1, .right h3 {
-    font-size: 3vw;
-    font-weight: 700;
-    line-height: 54px;
-    color: #ffffff;
-    margin-bottom: 30px;
+.left h1,
+.right h3 {
+  font-size: 3vw;
+  font-weight: 700;
+  line-height: 54px;
+  color: #ffffff;
+  margin-bottom: 30px;
 }
 
 .left p {
-    font-size: 1.5vw;
-    font-weight: 600;
-    line-height: 26px;
-    color: #ffffff;
-    margin-bottom: 70px;
+  font-size: 1.5vw;
+  font-weight: 600;
+  line-height: 26px;
+  color: #ffffff;
+  margin-bottom: 70px;
 }
 
-.home-btn{
-    display: flex;
-    text-align: center;
-    gap: 20px;
+.home-btn {
+  display: flex;
+  text-align: center;
+  gap: 20px;
 }
 
 a {
-    background: linear-gradient(to right, rgb(110, 175, 255, 0.7), rgb(213, 89, 255, 0.7));
-    color: #fff;
-    border-radius: 50px;
-    width: 180px;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 21px;
-    padding: 15px;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
+  background: linear-gradient(to right, rgb(110, 175, 255, 0.7), rgb(213, 89, 255, 0.7));
+  color: #fff;
+  border-radius: 50px;
+  width: 180px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-a:hover{
+a:hover {
   background: linear-gradient(to right, rgb(213, 89, 255, 0.7), rgb(110, 175, 255, 0.7));
 }
 
 .btn-1 {
-    background-color: #ffffff;
-    color: linear-gradient(to right, rgb(110, 175, 255, 0.7), rgb(213, 89, 255, 0.7));
+  background-color: #ffffff;
+  color: linear-gradient(to right, rgb(110, 175, 255, 0.7), rgb(213, 89, 255, 0.7));
 }
 
 .get-started:hover {
-    color: #fff;
-    background: linear-gradient(to right, rgb(110, 175, 255, 0.7), rgb(213, 89, 255, 0.7));
+  color: #fff;
+  background: linear-gradient(to right, rgb(110, 175, 255, 0.7), rgb(213, 89, 255, 0.7));
 }
 
 .card {
-    background-color: #ffffff;
-    border-radius: 15px;
-    padding: 20px;
-    text-align: center;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
 }
 
 .right h3 {
-    color: #333333;
+  color: #333333;
 }
 
 .right p {
-    font-size: 1.2vw;
-    font-weight: 200;
-    color: #333333;
+  font-size: 1.2vw;
+  font-weight: 200;
+  color: #333333;
 }
 
 .progress-bar {
-    width: 100%;
-    height: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    /* overflow: hidden; */
-    border-color: linear-gradient(to right, rgb(110, 175, 255), rgb(213, 89, 255));
+  width: 100%;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  /* overflow: hidden; */
+  border-color: rgb(213, 89, 255);
 }
 
 .progress {
-    height: 100%;
-    width: 0;
-    background: linear-gradient(to right, rgb(110, 175, 255, 0.7), rgb(213, 89, 255, 0.7));
-    border-radius: 10px;
+  height: 100%;
+  width: 75%;
+  background: rgb(213, 89, 255);
+  border-radius: 10px;
 }
 
 .payment-icons {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    color: rgb(193, 203, 248);
-    font-size: 1.5vw;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: rgb(193, 203, 248);
+  font-size: 1.5vw;
 }
 
 @media (max-width: 1100px) {
 
-    .left,
-    .right {
-        width: 100%;
-        float: none;
-    }
+  .left,
+  .right {
+    width: 100%;
+    float: none;
+  }
 
-    .left a {
-        width: 80%;
-        font-size: 3vw;
-    }
+  .left a {
+    width: 80%;
+    font-size: 3vw;
+  }
 }
 
+/* TEMPLATE SECTION */
 
- /*ROADMAP SECTION STYLES */
+.template-section {
+  background-color: rgb(248, 248, 254);
+  height: 130vh;
+  text-align: center;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+
+.template-section-title {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 42px;
+  line-height: 1.5;
+  color: rgb(52, 52, 52);
+}
+
+.template-section-text {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1.5;
+  color: rgb(100, 125, 238);
+}
+
+.template-section-tagline {
+  width: 62px;
+  height: 3px;
+  background-color: rgb(100, 125, 238);
+  justify-self: center;
+}
+
+.template-section-card {
+  float: left;
+  width: 33.3333%;
+  padding: 20px;
+  box-sizing: border-box;
+  padding: 55px;
+}
+
+.template-section svg {
+  width: 36px;
+  fill: rgb(100, 125, 238);
+}
+
+.template-section-card-title {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.template-section-card-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (max-width: 990px) {
+  .template-section-card {
+    width: 100%;
+    float: none;
+  }
+}
+
+/*ROADMAP SECTION STYLES */
 .roadmap {
   width: 95%;
   display: flex;
@@ -181,11 +284,13 @@ a:hover{
   align-items: center;
   margin: auto;
 }
+
 .roadmap dl {
   margin-top: 40px;
   position: relative;
   padding: 25px 0;
 }
+
 .roadmap dl:before {
   width: 5px;
   height: 100%;
@@ -193,6 +298,7 @@ a:hover{
   top: 0;
   background-image: linear-gradient(180deg, rgb(108, 132, 241) 0%, rgb(169, 88, 227) 100%);
 }
+
 .roadmap dt {
   position: relative;
   margin-top: 20px;
@@ -200,6 +306,7 @@ a:hover{
   font-size: 18px;
   color: rgb(37, 37, 37);
 }
+
 .roadmap dt:before {
   border-radius: 100%;
   padding: 12px 12px;
@@ -208,6 +315,7 @@ a:hover{
   background-image: linear-gradient(90deg, #647dee 0%, #a754e2 100%);
   opacity: 0.4;
 }
+
 .roadmap dt:after {
   border-radius: 100%;
   padding: 8px 8px;
@@ -216,12 +324,14 @@ a:hover{
   background-color: #fff;
   z-index: 2;
 }
+
 .roadmap dd {
   font-size: 1.1em;
   color: #505050;
   line-height: 24px;
   margin-bottom: 0;
 }
+
 .roadmap dl:before,
 .roadmap dt:before,
 .roadmap dt:after {
@@ -230,12 +340,12 @@ a:hover{
 }
 
 @media (min-width: 768px) {
-  .roadmap{
+  .roadmap {
     width: 65%;
   }
 }
 
- /*HOW IT WORK SECTION STYLES */
+/*HOW IT WORK SECTION STYLES */
 .how-it-works-section {
   text-align: center;
   color: #fff;
@@ -244,11 +354,13 @@ a:hover{
   background-size: cover;
   background-blend-mode: overlay;
 }
+
 video-btn-container a img {
   filter: invert(100%) brightness(100%) contrast(100%);
   width: 30px;
   height: 30px;
 }
+
 .video-btn-container {
   border-radius: 50%;
   background: linear-gradient(to right, rgb(110, 175, 255), rgb(213, 89, 255));
@@ -260,34 +372,34 @@ video-btn-container a img {
   justify-content: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 .how-it-works-section h4 {
-  font-family: 'Arial', sans-serif;
-  font-weight: 400;
   line-height: 1.2;
   font-size: 2.2em;
   margin-bottom: 20px;
 }
+
 .how-it-works-section p {
-  font-family: 'Arial', sans-serif;
-  font-weight: 400;
   line-height: 1.6;
   font-size: 1.2em;
   max-width: 600px;
   margin: 0 auto;
 }
+
 @media (min-width: 768px) {
-.how-it-works-section {
-  padding: 100px 20px;
-}
+  .how-it-works-section {
+    padding: 100px 20px;
+  }
 }
 
- /*IT IS SAFE SECTION STYLES */
-.it-is-safe-section h2{
+/*IT IS SAFE SECTION STYLES */
+.it-is-safe-section h2 {
   position: relative;
   font-weight: bold;
   text-align: center;
   font-size: 2.8em;
 }
+
 .it-is-safe-section h2:before {
   content: '';
   position: absolute;
@@ -298,6 +410,7 @@ video-btn-container a img {
   background-image: linear-gradient(180deg, rgb(108, 132, 241) 0%, rgb(169, 88, 227) 100%);
   transform: translateX(-50%);
 }
+
 .features-container {
   display: flex;
   flex-direction: column;
@@ -309,13 +422,16 @@ video-btn-container a img {
   line-height: 1.7;
   margin-top: 50px;
 }
+
 .features {
   width: 100%;
   margin-bottom: 20px;
 }
-.dotted-line{
-  display: none; 
+
+.dotted-line {
+  display: none;
 }
+
 .features .icon {
   border: 3px dashed #ddd;
   border-radius: 50%;
@@ -326,50 +442,59 @@ video-btn-container a img {
   align-items: center;
   justify-content: center;
 }
+
 .features .icon img {
   width: 50px;
   height: 50px;
   filter: invert(50%) sepia(45%) saturate(5475%) hue-rotate(226deg) brightness(95%) contrast(101%);
 }
+
 .features h3 {
   font-weight: 400;
   margin: 1.5em 0;
 }
+
 .features p {
   font-size: 1.2em;
   color: #555;
 }
-.license-features{
+
+.license-features {
   padding-top: auto;
 }
+
 @media (min-width: 968px) {
-.features-container {
-  flex-direction: row;
-  justify-content: center;
-}
-.dotted-line{
-  display: flex;
-  border: 2px dashed #ddd;
-  width: 300px;
-  margin-bottom: 230px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-.license-features{
-  padding-top: 30px;
-}
-.features {
-  max-width: 300px;
-}
+  .features-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .dotted-line {
+    display: flex;
+    border: 2px dashed #ddd;
+    width: 300px;
+    margin-bottom: 230px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .license-features {
+    padding-top: 30px;
+  }
+
+  .features {
+    max-width: 300px;
+  }
 }
 
 /*TEMPLATE FEATURES SECTION*/
-.template-section{
-  background: linear-gradient(90deg, rgba(100,125,238,0.05) 0%, rgba(167,84,226,0.05) 100%);
+.template-section {
+  background: linear-gradient(90deg, rgba(100, 125, 238, 0.05) 0%, rgba(167, 84, 226, 0.05) 100%);
   padding: 20px 0;
 }
-.template-text{
+
+.template-text {
   padding: 0 20px;
   display: flex;
   flex-direction: column;
@@ -383,14 +508,16 @@ video-btn-container a img {
   font-family: 'Roboto', sans-serif;
   margin-top: 50px;
 }
-.template-section button{
+
+.template-section button {
   margin-top: 30px 0;
 }
+
 @media (min-width: 968px) {
-.template-container{
-  width: 600px;
-  line-height: 2;
-}
+  .template-container {
+    width: 600px;
+    line-height: 2;
+  }
 }
 
 /* DATA SECTION*/
@@ -406,26 +533,30 @@ video-btn-container a img {
   text-align: center;
   grid-template-columns: repeat(1, 1fr);
 }
-.data-section p{
+
+.data-section p {
   color: #fff;
   font-weight: 400;
   font-size: 0.88em;
   margin-bottom: 20px;
 }
-.data-section h2{
+
+.data-section h2 {
   font-family: 'Jura', sans-serif;
   font-weight: 200;
   font-size: 2.6em;
   line-height: 100%;
   margin-bottom: 8px;
 }
-@media (min-width:768px){
-  .data-section{
+
+@media (min-width:768px) {
+  .data-section {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width:1024px){
-  .data-section{
+
+@media (min-width:1024px) {
+  .data-section {
     grid-template-columns: repeat(4, 1fr);
   }
 }
