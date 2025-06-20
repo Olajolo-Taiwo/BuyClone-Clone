@@ -2,11 +2,55 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 /* GENERAL STYLES*/
 section {
   margin-bottom: 20px;
+}
+
+/* GROUP (MULTIPLE ELEMENT) STYLES*/
+.section h2{
+  font-size: 2.8em;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.roadmap-section p, 
+.section .tagline, 
+.advisor-section p,
+.blog-section p
+{
+  color: rgb(93, 116, 221);
+  position: relative;
+  font-size: 1.1em;
+  margin-top: 8px;
+  text-align: center;
+  font-weight: 400;
+}
+.roadmap-section p:before, 
+.template-section .tagline:before, .advisor-section p:before,
+.blog-section p::before {
+  content: '';
+  position: absolute;
+  padding: 2px 30px;
+  border-radius: 8px;
+  top: 40px;
+  left: 50%;
+  background-image: linear-gradient(180deg, rgb(108, 132, 241) 0%, rgb(169, 88, 227) 100%);
+  transform: translateX(-50%);
+}
+.roadmap-section button, 
+.template-section button {
+  display: block;
+  padding: 20px 40px;
+  margin: 40px auto;
+  border: none;
+  font-size: 1em;
+  border-radius: 30px;
+  background-image: linear-gradient(180deg, rgb(108, 132, 241) 0%, rgb(169, 88, 227) 100%);
+  color: white;
 }
 
  /*HERO SECTION STYLES */
@@ -138,29 +182,7 @@ a:hover{
 
 
  /*ROADMAP SECTION STYLES */
-.roadmap-section h2 {
-  font-size: 2.8em;
-  text-align: center;
-  margin-bottom: 0;
-}
-.roadmap-section p {
-  color: rgb(93, 116, 221);
-  position: relative;
-  font-size: 1.1em;
-  margin-top: 8px;
-  text-align: center;
-  font-weight: bold;
-}
-.roadmap-section p:before {
-  content: '';
-  position: absolute;
-  padding: 2px 30px;
-  border-radius: 8px;
-  top: 40px;
-  left: 50%;
-  background-image: linear-gradient(180deg, rgb(108, 132, 241) 0%, rgb(169, 88, 227) 100%);
-  transform: translateX(-50%);
-}
+
 .roadmap {
   width: 95%;
   display: flex;
@@ -182,7 +204,7 @@ a:hover{
 }
 .roadmap dt {
   position: relative;
-  margin-top: 20px;
+  margin-top: 40px;
   padding-left: 35px;
   font-size: 18px;
   color: rgb(37, 37, 37);
@@ -204,10 +226,11 @@ a:hover{
   z-index: 2;
 }
 .roadmap dd {
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #505050;
-  line-height: 24px;
+  line-height: 26px;
   margin-bottom: 0;
+  margin-top: 15px;
 }
 .roadmap dl:before,
 .roadmap dt:before,
@@ -215,19 +238,10 @@ a:hover{
   position: absolute;
   content: '';
 }
-.roadmap-section button {
-  display: block;
-  padding: 20px 30px;
-  margin: auto;
-  border: none;
-  font-size: 0.9em;
-  border-radius: 30px;
-  background-image: linear-gradient(180deg, rgb(108, 132, 241) 0%, rgb(169, 88, 227) 100%);
-  color: white;
-}
+
 @media (min-width: 768px) {
   .roadmap{
-    width: 65%;
+    width: 70%;
   }
 }
 
@@ -235,10 +249,11 @@ a:hover{
 .how-it-works-section {
   text-align: center;
   color: #fff;
-  padding: 80px 20px;
+  padding: 60px 20px;
   background: url("/assets/section-bg2.jpg"), linear-gradient(to right, rgb(110, 175, 255, 0.3), rgb(213, 89, 255, 0.3));
   background-size: cover;
   background-blend-mode: overlay;
+  margin: 60px 0;
 }
 video-btn-container a img {
   filter: invert(100%) brightness(100%) contrast(100%);
@@ -258,16 +273,16 @@ video-btn-container a img {
 }
 .how-it-works-section h4 {
   font-family: 'Arial', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.2;
-  font-size: 2.2em;
-  margin-bottom: 20px;
+  font-size: 2.5em;
+  margin-bottom: 40px;
 }
 .how-it-works-section p {
   font-family: 'Arial', sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  font-size: 1.2em;
+  font-size: 1.3em;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -280,9 +295,10 @@ video-btn-container a img {
  /*IT IS SAFE SECTION STYLES */
 .it-is-safe-section h2{
   position: relative;
-  font-weight: bold;
+  font-weight: 300;
   text-align: center;
   font-size: 2.8em;
+  margin-top: 100px;
 }
 .it-is-safe-section h2:before {
   content: '';
@@ -332,8 +348,10 @@ video-btn-container a img {
   margin: 1.5em 0;
 }
 .features p {
-  font-size: 1em;
+  font-size: 1.2em;
   color: #555;
+  width: 350px;
+  margin: 20px auto;
 }
 .license-features{
   padding-top: auto;
@@ -357,5 +375,175 @@ video-btn-container a img {
 }
 .features {
   max-width: 300px;
+}
+
+.features p {
+    width: auto;
+    margin: 0;
+}
+}
+
+/*TEMPLATE FEATURES SECTION*/
+.template-section, .team/*OUR TEAM SECTION*/{
+  background: linear-gradient(90deg, rgba(100,125,238,0.05) 0%, rgba(167,84,226,0.05) 100%);
+  padding: 20px 0;
+}
+.template-text{
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 2;
+  color: #555;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 50px;
+}
+.template-section button{
+  margin-top: 30px 0;
+}
+@media (min-width: 768px) {
+.template-text{
+  width:600px;
+}
+}
+
+/* DATA SECTION*/
+.data-section {
+  color: #fff;
+  padding: 120px 20px;
+  background: url("/assets/transaction.jpg"), linear-gradient(to right, rgb(110, 175, 255, 0.3), rgb(213, 89, 255, 0.3));
+  background-size: cover;
+  background-blend-mode: overlay;
+  display: grid;
+  gap: 1rem;
+  padding: 5rem 1rem;
+  text-align: center;
+  grid-template-columns: repeat(1, 1fr);
+}
+.data-section p{
+  color: #fff;
+  font-weight: 400;
+  font-size: 0.88em;
+  margin-bottom: 20px;
+}
+.data-section h2{
+  font-family: 'Jura', sans-serif;
+  font-weight: 200;
+  font-size: 2.6em;
+  line-height: 100%;
+  margin-bottom: 8px;
+}
+@media (min-width:768px){
+  .data-section{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width:1024px){
+  .data-section{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/*ADVISORS SECTION & OUR TEAM SECTION STYLES*/
+.advisor-section{
+  margin-top: 70px;
+}
+.advisor-section p {
+  color: #555;
+  font-size: 1.2em;
+  padding: 0 20px;
+  line-height: 1.7;
+  display: flex;
+}
+.advisor-section p:before {
+  top: 130px;
+}
+.advisor-container {
+  display: grid;
+  padding: 50px 5px;
+  text-align: center;
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 1.5em;
+}
+.advisor-container .grid-item {
+  position: relative;
+  border-radius: 1.5em;
+  background: linear-gradient(90deg, rgba(100,125,238,0.06) 0%, rgba(167,84,226,0.06) 100%);
+  border: 3px solid rgb(100, 125, 238);
+  margin: 3em auto;
+  padding-top: 10px;
+  max-width: 320px;
+  min-width: 250px;
+}
+.team-con .grid-item {
+max-width: 250px;
+}
+.advisor-container .grid-item::before,
+.advisor-container .grid-item::after {
+  content: '';
+  position: absolute;
+  border-radius: 0.7em;
+  opacity: 0.3;
+  background-image: linear-gradient(-60deg, #647dee 0%, #a754e2 100%);
+  transition: 0.4s ease;
+}
+.advisor-container .grid-item::before {
+  z-index: 2;
+  left: 20px;
+  right: 20px;
+  height: 10px;
+  bottom: -10px;
+}
+.advisor-container .grid-item::after {
+  z-index: 1;
+  left: 30px;
+  right: 30px;
+  height: 20px;
+  bottom: -20px;
+}
+.advisor-container .grid-item img {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+  margin-bottom: -5px;
+}
+.advisor-container .grid-item h3 {
+  font-weight: 500;
+  margin: 0.7em 0 0.3em;
+} 
+.advisor-container .grid-item h4 {
+  font-weight: 400;
+  color: #7a56f3;
+}
+@media (min-width:768px){
+.advisor-container{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 40px;
+  }
+  .advisor-section p:before {
+  top: 100px;
+}
+  .advisor-section p {
+    width: 700px;
+    margin: auto;
+  }
+}
+@media (min-width:1024px){
+.advisor-container{
+    grid-template-columns: repeat(3, 1fr);
+    padding: 80px;
+  }
+.team-con{
+    grid-template-columns: repeat(4, 1fr);
+    padding: 80px;
+  }
+  .advisor-section p:before {
+  top: 100px;
+}
+.advisor-container .grid-item{
+  margin: 20px 10px;
 }
 }
