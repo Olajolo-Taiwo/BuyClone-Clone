@@ -11,7 +11,8 @@ section {
 }
 
 /* GROUP (MULTIPLE ELEMENT) STYLES*/
-.section h2{
+.section h2,
+.template-section-title{
   font-size: 2.8em;
   text-align: center;
   margin-bottom: 20px;
@@ -20,18 +21,20 @@ section {
 .roadmap-section p, 
 .section .tagline, 
 .advisor-section p,
-.blog-section p
+.blog-section p,
+.template-section-text
 {
   color: rgb(93, 116, 221);
   position: relative;
-  font-size: 1.1em;
+  font-size: 1.2em;
   margin-top: 8px;
   text-align: center;
   font-weight: 400;
 }
 .roadmap-section p:before, 
-.template-section .tagline:before, .advisor-section p:before,
-.blog-section p::before {
+.teemplate-section .tagline:before, .advisor-section p:before,
+.blog-section p::before,
+.template-section-text::before {
   content: '';
   position: absolute;
   padding: 2px 30px;
@@ -42,7 +45,7 @@ section {
   transform: translateX(-50%);
 }
 .roadmap-section button, 
-.template-section button {
+.teemplate-section button {
   display: block;
   padding: 20px 40px;
   margin: 40px auto;
@@ -53,132 +56,72 @@ section {
   color: white;
 }
 
- /*HERO SECTION STYLES */
-.hero-section {
-    /* padding: 50px; */
-    height: 100vh;
-    background: url('/assets/slide.jpg'), linear-gradient(to right, rgb(110, 175, 255, 0.2), rgb(213, 89, 255, 0.2));
-    background-size: cover;
-    background-blend-mode: overlay;
-    padding: 100px;
-    padding-top: 200px;
+ /*TEMPLATE SECTION STYLES */
+.template-section{
+  background-color: rgb(248, 248, 254);
+  padding: 10px 0;
+  line-height: 1.8;
+}
+.grid-con{
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-
-.left,
-.right {
-    padding: 20px;
-    float: left;
-    width: 50%;
+.template-section-card {
+  padding: 1.2em 1.5em;
+  text-align: center;
+  color: #505050;
+  line-height: 24px;
+  margin: 0;
 }
 
-.left h1, .right h3 {
-    font-size: 3vw;
-    font-weight: 700;
-    line-height: 54px;
-    color: #ffffff;
-    margin-bottom: 30px;
+.template-section-card-text {
+  font-size: 1em;
+  width: 91%;
+  margin: auto;
+}
+.template-section svg {
+  width: 36px;
+  fill: rgb(100, 125, 238);
 }
 
-.left p {
-    font-size: 1.5vw;
-    font-weight: 600;
-    line-height: 26px;
-    color: #ffffff;
-    margin-bottom: 70px;
+.template-section-card-title{
+  font-size: 18px;
+  font-weight: 600;
 }
 
-.home-btn{
-    display: flex;
-    text-align: center;
-    gap: 20px;
+@media (min-width: 640px){
+  .grid-con{
+grid-template-columns: repeat(2, 1fr);
+padding: 10px 100px;
+gap: 0;
+  }
+  .template-section-card-text {
+  font-size: 1.2em;
+  width: 200px;
+  padding: 0;
+  font-weight: 300;
 }
 
-a {
-    background: linear-gradient(to right, rgb(110, 175, 255, 0.7), rgb(213, 89, 255, 0.7));
-    color: #fff;
-    border-radius: 50px;
-    width: 180px;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 21px;
-    padding: 15px;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
+  .template-section-card {
+    padding: 1.2em 0;
+  margin: 20px 0;
+}
+.template-section svg {
+  width: 50px;
+}
 }
 
-a:hover{
-  background: linear-gradient(to right, rgb(213, 89, 255, 0.7), rgb(110, 175, 255, 0.7));
+@media (min-width: 1024px){
+  .grid-con{
+grid-template-columns: repeat(3, 1fr);
+  }
+
+    .template-section-card-text {
+  font-size: 1.2em;
+  width: 270px;}
 }
 
-.btn-1 {
-    background-color: #ffffff;
-    color: linear-gradient(to right, rgb(110, 175, 255, 0.7), rgb(213, 89, 255, 0.7));
-}
-
-.get-started:hover {
-    color: #fff;
-    background: linear-gradient(to right, rgb(110, 175, 255, 0.7), rgb(213, 89, 255, 0.7));
-}
-
-.card {
-    background-color: #ffffff;
-    border-radius: 15px;
-    padding: 20px;
-    text-align: center;
-}
-
-.right h3 {
-    color: #333333;
-}
-
-.right p {
-    font-size: 1.2vw;
-    font-weight: 200;
-    color: #333333;
-}
-
-.progress-bar {
-    width: 100%;
-    height: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    /* overflow: hidden; */
-    border-color: linear-gradient(to right, rgb(110, 175, 255), rgb(213, 89, 255));
-}
-
-.progress {
-    height: 100%;
-    width: 0;
-    background: linear-gradient(to right, rgb(110, 175, 255, 0.7), rgb(213, 89, 255, 0.7));
-    border-radius: 10px;
-}
-
-.payment-icons {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    color: rgb(193, 203, 248);
-    font-size: 1.5vw;
-}
-
-@media (max-width: 1100px) {
-
-    .left,
-    .right {
-        width: 100%;
-        float: none;
-    }
-
-    .left a {
-        width: 80%;
-        font-size: 3vw;
-    }
-}
 
 
  /*ROADMAP SECTION STYLES */
@@ -313,7 +256,7 @@ video-btn-container a img {
 .features-container {
   display: flex;
   flex-direction: column;
-  padding: 40px 12%;
+  padding: 40px 12px;
   background: #fff;
   align-items: center;
   text-align: center;
@@ -384,11 +327,11 @@ video-btn-container a img {
 }
 
 /*TEMPLATE FEATURES SECTION*/
-.template-section, .team/*OUR TEAM SECTION*/{
+.teemplate-section, .team/*OUR TEAM SECTION*/{
   background: linear-gradient(90deg, rgba(100,125,238,0.05) 0%, rgba(167,84,226,0.05) 100%);
   padding: 20px 0;
 }
-.template-text{
+.teemplate-text{
   padding: 0 25px;
   display: flex;
   flex-direction: column;
@@ -402,11 +345,11 @@ video-btn-container a img {
   font-family: 'Roboto', sans-serif;
   margin-top: 50px;
 }
-.template-section button{
+.teemplate-section button{
   margin-top: 30px 0;
 }
 @media (min-width: 768px) {
-.template-text{
+.teemplate-text{
   width:600px;
 }
 }
