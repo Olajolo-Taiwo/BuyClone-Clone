@@ -13,9 +13,90 @@
 
 <body>
 <main>
+ <!-- GET STARTED SECTION -->
+  <section class="get-started-section section">
+
+    <h2>How to Get Started</h2>
+    <p class="get-started-section-text">BuyCoin template</p>
+    <div class="template-section-tagline"></div>
+
+
+
+    <div class="cards">
+      <div class="get-started-section-card">
+        <span class="get-started-section-card-number">01</span>
+        <h3 class="get-started-section-card-title">Sign up for BuyCoin</h3>
+        <p class="get-started-section-card-text">There are many variations of passages of Lorem Ipsum available,
+          but the majority have suffered alteration in some form, by injected humour, or <b>randomised
+            words</b> which don't look even slightly.</p>
+      </div>
+
+      <div class="get-started-section-card">
+        <span class="get-started-section-card-number">02</span>
+        <h3 class="get-started-section-card-title">Connect your bank account</h3>
+        <p class="get-started-section-card-text">There are many variations of passages of Lorem Ipsum available,
+          <b>but the majority have suffered</b> alteration in some form, by injected humour, or randomised
+          words which don't look even slightly.
+        </p>
+        <div class="get-started-section-tagline"></div>
+      </div>
+
+      <div class="get-started-section-card">
+        <span class="get-started-section-card-number">03</span>
+        <h3 class="get-started-section-card-title">Buy and sell coins</h3>
+        <p class="get-started-section-card-text">There are many variations of passages of Lorem Ipsum available,
+          but the majority <a href="#">have suffered</a> alteration in some form, by injected humour, or
+          randomised words which don't look even slightly.</p>
+        <div class="get-started-section-tagline"></div>
+      </div>
+
+    </div>
+
+    <ul class="tab">
+      <li class="tab-item">
+        <a class="tab-link active">USD</a>
+      </li>
+      <li class="tab-item">
+        <a class="tab-link">EUR</a>
+      </li>
+      <li class="tab-item">
+        <a class="tab-link">GBP</a>
+      </li>
+      <li class="tab-item">
+        <a class="tab-link">RUB</a>
+      </li>
+    </ul>
+
+    <ul class="offers">
+      <li class="offers-item one">
+        <p class="offers-get">Get 0.0082 BTC</p>
+        <p class="offers-for">for</p>
+        <p class="offers-value">$100</p>
+        <button class="offers-btn" href="#">Buy</button>
+      </li>
+      <li class="offers-item">
+        <p class="offers-get">Get 0.0165 BTC</p>
+        <p class="offers-for">for</p>
+        <p class="offers-value">$200</p>
+        <button class="offers-btn" href="#">Buy</button>
+      </li>
+      <li class="offers-item">
+        <p class="offers-get">Get 0.0412 BTC</p>
+        <p class="offers-for">for</p>
+        <p class="offers-value">$500</p>
+        <button class="offers-btn" href="#">Buy</button>
+      </li>
+      <li class="offers-item two">
+        <p class="offers-get">Get 0.0825 BTC</p>
+        <p class="offers-for">for</p>
+        <p class="offers-value">$1000</p>
+        <button class="offers-btn" href="#">Buy</button>
+      </li>
+    </ul>
+</section>
 
     <!-- BUYCOIN TEMPLATE SECTION -->
-  <section class="template-section">
+  <section class="template-section section">
     <h2 class="template-section-title">BuyCoin template</h2>
     <p class="template-section-text">Excellent for your business</p>
     <div class="template-section-tagline"></div>
@@ -293,8 +374,12 @@
 
   </div>
 </section>
-
 </main>
 </body>
-
+  <script>
+    window.addEventListener('scroll', () => {
+      document.body.classList.toggle('scrolled', window.scrollY > 50);
+    });
+    
+  </script>
 </html>
