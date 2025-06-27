@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
 html, body{
   width: 100%;
@@ -1434,9 +1435,12 @@ textarea:focus {
 }
 .partners-slider{
   display: flex;
+  max-width: 1200px;
+  padding: 30px 10px !important;
 }
 .partners-slider a img {
-  width: 100%;
+  max-width: 100%;
+  gap: 20px;
   opacity: 0.5;
   filter: grayscale(100%);
 }
@@ -1647,11 +1651,11 @@ footer .subscribe {
   }
 
   .contact-section {
-    padding: 15px 2vw;
+    padding: 15px;
   }
 
   .partners {
-    padding: 10px 2vw;
+    padding: 10px;
   }
 
   .partners-slider a img {
