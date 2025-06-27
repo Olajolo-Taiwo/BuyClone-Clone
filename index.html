@@ -10,10 +10,104 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/paymentfont@1.2.5/css/paymentfont.min.css">
   
     <title>Buycoin - Cryptocurrency Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
+<!---->
+  <header id="main-header">
+  <div class="logo">
+    <button id="menu-toggle">≡</button>
+    <img src="/assets/logo.svg" alt="logo" />
+    <div class="title">
+      <h4>BuyCoin</h4>
+      <p>Landing Page</p>
+    </div>
+  </div>
+
+  <nav class="desktop-nav">
+    <button class="sign-in">Sign In</button>
+  </nav>
+</header>
+
+<aside id="sidebar">
+  <ul class="sidebar-nav">
+    <li class="dropdown">
+      <span>Home ▾</span>
+      <ul class="dropdown-list" class="bg-white-500">
+        <li><a href="#">Landing Page 1</a></li>
+        <li><a href="#">Landing Page 2</a></li>
+        <li><a href="#">Landing Page 3</a></li>
+        <li><a href="#">Landing Page 4</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Features</a></li>
+    <li><a href="#">Safety</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</aside>
+
+
 <main>
+<!-- GET STARTED SECTION -->
+    <section class="home-section">
+    <div class="home-section-left">
+      <h1 class="home-section-title">BuyCoin Blockchain</h1>
+
+      <p class="home-section-text">Secure & Easy Way To Trade</p>
+
+      <div class="home-section-btns">
+        <button class="home-section-btn btn-white">Get started</button>
+
+        <button class="home-section-btn">Whitepaper</button>
+      </div>
+    </div>
+
+    <div class="home-content-right">
+      <div class="home-section-sales">
+        <h3>BuyCoin ICO:</h3>
+
+        <p>Discount 33% from final price</p>
+
+        <div class="progress-wrapper">
+          <div class="progress-marker left">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" stroke="#34c759" stroke-width="2" fill="none" />
+              <path d="M8 12l2 2l4-4" stroke="#34c759" stroke-width="2" fill="none" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            900K
+          </div>
+
+          <div class="progress-marker right">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" stroke="#34c759" stroke-width="2" fill="none" />
+              <path d="M8 12l2 2l4-4" stroke="#34c759" stroke-width="2" fill="none" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            5M
+          </div>
+
+          <div class="progress-container">
+            <div class="progress-bar"></div>
+            <div class="progress-value">12M USD</div>
+          </div>
+        </div>
+
+        <p>Fixed token edition 3.000.000 BITS</p>
+
+        <button class="section-btn">Buy Tokens</button>
+
+        <ul class="payment-icons">
+          <li><i class="pf pf-visa"></i></li>
+          <li><i class="pf pf-mastercard"></i></li>
+          <li><i class="pf pf-paypal"></i></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </section>
  <!-- GET STARTED SECTION -->
   <section class="get-started-section section">
     <h2>How to Get Started</h2>
@@ -408,6 +502,7 @@
 </section>
 </main>
 </body>
+<script src="script.js"></script>
   <script>
     window.addEventListener('scroll', () => {
       document.body.classList.toggle('scrolled', window.scrollY > 50);
