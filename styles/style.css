@@ -6,8 +6,6 @@ html, body{
 body {
   margin: 0;
   box-sizing: border-box;
-  font-family: Helvetica, sans-serif;
-  overflow-x: hidden;
 }
 
 /* GENERAL STYLES*/
@@ -306,6 +304,7 @@ body.menu-open .logo img {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  padding-top: 100px;
   padding-bottom: 50px;
   text-align: center;
 }
@@ -1275,9 +1274,9 @@ max-width: 250px;
   right: 30px;
   height: 20px;
   bottom: -20px;}
+  
 
   
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* // <weight>: Use a value from 300 to 700
 // <uniquifier>: Use a unique and descriptive class name */
@@ -1302,23 +1301,17 @@ max-width: 250px;
 } */
 
 .body-box {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
   line-height: 1.5;
-  color: rgb(52, 52, 52);
+  margin: 0 20px;
 }
 
 .contact-section {
   position: relative;
   background-color: rgb(255, 255, 255);
   padding: 40px 100px;
-  height: 100vh;
+  height: 100%;
   box-sizing: border-box;
   margin-bottom: 50px;
 }
@@ -1400,10 +1393,10 @@ max-width: 250px;
 input,
 textarea {
   width: 100%;
-  padding: 15px;
+  padding: 10px 25px !important;
   border: 2px solid rgb(100, 125, 238);
   border-radius: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
   font-size: 1em;
 }
 
@@ -1439,9 +1432,11 @@ textarea:focus {
   justify-content: space-evenly;
   padding: 50px 100px;
 }
-
+.partners-slider{
+  display: flex;
+}
 .partners-slider a img {
-  width: 19%;
+  width: 100%;
   opacity: 0.5;
   filter: grayscale(100%);
 }
@@ -1585,7 +1580,7 @@ footer .subscribe {
   }
 
   .partners-slider a img {
-    width: 30%;
+    width: 100%;
   }
 
   footer {
@@ -1626,7 +1621,7 @@ footer .subscribe {
   }
 
   .partners-slider a img {
-    width: 19%;
+    width: 100%;
   }
 
   .subscribe-input {
@@ -1660,7 +1655,7 @@ footer .subscribe {
   }
 
   .partners-slider a img {
-    width: 19%;
+    width: 100%;
   }
 
   .form-section button {
