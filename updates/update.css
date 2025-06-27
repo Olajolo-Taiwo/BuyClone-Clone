@@ -23,114 +23,404 @@
 } */
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-    line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  line-height: 1.5;
+  color: rgb(52, 52, 52);
 }
 
 .contact-section {
-    background-color: rgb(255, 255, 255);
-    padding: 100px;
-    height: 100vh;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  padding: 40px 100px;
+  height: 100vh;
+  box-sizing: border-box;
+  margin-bottom: 50px;
 }
 
 .contact-title-section {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .contact-section-title {
-    font-family: "Jura", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 2.6em;
-    color: rgb(52, 52, 52);
-    margin-bottom: 20px;
+  font-family: "Jura", sans-serif;
+  font-weight: 600;
+  font-size: 2.6em;
+
+  margin-bottom: 20px;
 }
 
 .contact-section-text {
-    font-family: "Roboto", sans-serif;
-    font-size: 1.2em;
-    color: rgb(80, 80, 80);
-    margin-bottom: 20px;
+  font-size: 1.2em;
+  color: rgb(80, 80, 80);
+  margin-bottom: 20px;
 }
 
 .contact-tagline {
-    width: 62px;
-    height: 3px;
-    background: linear-gradient(to right, rgb(110, 175, 255), rgb(213, 89, 255));
-    justify-self: center;
+  width: 62px;
+  height: 3px;
+  background: linear-gradient(to right, rgb(110, 175, 255), rgb(213, 89, 255));
+  justify-self: center;
 }
 
 .contact {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.contact-list, .form-section {
-    width: 50%;
-    flex: 50%;
+.contact-list,
+.form-section {
+  flex: 50%;
 }
 
 .contact-list ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .contact-list ul li {
-    font-size: 1em;
-    color: rgb(52, 52, 52);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-bottom: 20px;
+  font-size: 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 35px;
 }
+
 .contact-list ul li span {
-    border-radius: 50%;
-    background: linear-gradient(to right, rgb(100, 125, 238), rgb(213, 89, 255));
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    padding: 10px;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgb(100, 125, 238), rgb(213, 89, 255));
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 10px;
 }
+
 .contact-list ul li span svg {
-    justify-self: center;
-    width: 20px;
-    fill: rgb(255, 255, 255);
+  justify-self: center;
+  width: 20px;
+  fill: rgb(255, 255, 255);
 }
 
 .contact-list ul li a {
-    text-decoration: none;
-    color: rgb(52, 52, 52);
-    padding: 7px 0;
+  text-decoration: none;
+  padding: 7px 0;
 }
 
-input,textarea {
-    width: 100%;
-    padding: 15px;
-    /* height: 20px; */
-    border: 2px solid rgb(100, 125, 238);
-    border-radius: 50px;
-    margin-bottom: 20px;
-    font-size: 1em;
-    color: rgb(52, 52, 52);
+input,
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid rgb(100, 125, 238);
+  border-radius: 50px;
+  margin-bottom: 20px;
+  font-size: 1em;
 }
 
 textarea {
-    border-radius: 25px;
-    height: 140px;
+  border-radius: 25px;
+  height: 140px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: rgb(213, 89, 255);
+}
+
+.form-section button {
+  font-weight: 500;
+  font-size: 0.9em;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(90deg, rgb(100, 125, 238), rgb(167, 84, 226));
+  width: 35%;
+}
+
+.partners {
+  background-color: rgb(249, 246, 253);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 50px 100px;
+}
+
+.partners-slider a img {
+  width: 19%;
+  opacity: 0.5;
+  filter: grayscale(100%);
+}
+
+.partners-slider a img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  transition: filter 1s ease;
+}
+
+footer {
+  position: relative;
+  background-color: rgb(52, 52, 52);
+  color: rgb(255, 255, 255);
+  padding: 40px 100px;
+  box-sizing: border-box;
+  text-align: center;
+
+}
+
+footer .footer-title {
+  font-family: "jura", sans-serif;
+  font-weight: 600;
+  font-size: 2.6em;
+  text-align: center;
+  margin-bottom: 40px;
+  color: rgb(255, 255, 255);
+}
+
+footer .subscribe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-bottom: 70px;
+
+}
+
+.subscribe-input {
+  width: 28%;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  border-radius: 25px 0 0 25px;
+  background: linear-gradient(90deg, rgb(100, 125, 238, 0.2), rgb(167, 84, 226, 0.2));
+}
+
+.subscribe-input::placeholder {
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.subscribe-btn {
+  height: 50px;
+  fill: rgb(255, 255, 255);
+  background: rgb(167, 84, 226, 0.2);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  font-size: 1em;
+  width: 5%;
+}
+
+.subscribe-btn svg {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+  list-style: none;
+  gap: 20px;
+}
+
+.footer-social li a svg {
+  width: 25px;
+  height: 25px;
+  transition: fill 0.3s ease;
+}
+
+.in {
+  fill: rgb(0, 111, 172);
+}
+
+.fb {
+  fill: rgb(8, 99, 247);
+}
+
+.inst {
+  fill: rgb(246, 0, 152);
+}
+
+.vk {
+  fill: rgb(0, 119, 255);
+}
+
+.tw {
+  fill: rgb(1, 146, 227);
+}
+
+.footer-social li a svg:hover {
+  fill: rgb(100, 125, 238);
+}
+
+.footer-copyright p {
+  font-size: 0.9em;
+  color: rgb(255, 255, 255);
+}
+
+.footer-copyright a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+
+  .contact-section,
+  .partners,
+  footer {
+    padding: 40px 40px;
+  }
+
+}
+
+@media (max-width: 900px) {
+  .contact-section {
+    padding: 30px 10px;
+    height: auto;
+  }
+
+  .partners {
+    padding: 30px 10px;
+  }
+
+  .partners-slider a img {
+    width: 30%;
+  }
+
+  footer {
+    padding: 30px 10px;
+  }
+
+  .subscribe-input {
+    width: 50%;
+  }
+
+  .subscribe-btn {
+    width: 15%;
+  }
+
+ .subscribe-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  
+}
+
+@media (max-width: 600px) {
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact-list,
+  .form-section {
+    flex: 100%;
+    width: 100%;
+  }
+
+  .partners {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 5px;
+  }
+
+  .partners-slider a img {
+    width: 19%;
+  }
+
+  .subscribe-input {
+    width: 70%;
+  }
+
+  .subscribe-btn {
+    width: 25%;
+  }
+
+  .subscribe-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .contact-section-title,
+  footer .footer-title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  .contact-section {
+    padding: 15px 2vw;
+  }
+
+  .partners {
+    padding: 10px 2vw;
+  }
+
+  .partners-slider a img {
+    width: 19%;
+  }
+
+  .form-section button {
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .subscribe-input,
+  .subscribe-btn {
+    margin-bottom: 10px;
+  }
+
+  .subscribe-input {
+    border-radius: 25px 0 0 25px;
+  }
+  .subscribe-btn {
+    border-radius: 0 25px 25px 0;
+  }
+
+  .subscribe-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .subscribe {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .footer-social {
+    gap: 10px;
+  }
+
+  .footer-social li a svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .footer-copyright p {
+    font-size: 0.8em;
+  }
 }
