@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* // <weight>: Use a value from 300 to 700
+// <uniquifier>: Use a unique and descriptive class name */
+
+/* .jura-<uniquifier> {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+/* // <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name */
+
+/* .roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    line-height: 1.5;
+}
+
+.contact-section {
+    background-color: rgb(255, 255, 255);
+    padding: 100px;
+    height: 100vh;
+}
+
+.contact-title-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-section-title {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.6em;
+    color: rgb(52, 52, 52);
+    margin-bottom: 20px;
+}
+
+.contact-section-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    color: rgb(80, 80, 80);
+    margin-bottom: 20px;
+}
+
+.contact-tagline {
+    width: 62px;
+    height: 3px;
+    background: linear-gradient(to right, rgb(110, 175, 255), rgb(213, 89, 255));
+    justify-self: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contact-list, .form-section {
+    width: 50%;
+    flex: 50%;
+}
+
+.contact-list ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.contact-list ul li {
+    font-size: 1em;
+    color: rgb(52, 52, 52);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.contact-list ul li span {
+    border-radius: 50%;
+    background: linear-gradient(to right, rgb(100, 125, 238), rgb(213, 89, 255));
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+}
+.contact-list ul li span svg {
+    justify-self: center;
+    width: 20px;
+    fill: rgb(255, 255, 255);
+}
+
+.contact-list ul li a {
+    text-decoration: none;
+    color: rgb(52, 52, 52);
+    padding: 7px 0;
+}
+
+input,textarea {
+    width: 100%;
+    padding: 15px;
+    /* height: 20px; */
+    border: 2px solid rgb(100, 125, 238);
+    border-radius: 50px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: rgb(52, 52, 52);
+}
+
+textarea {
+    border-radius: 25px;
+    height: 140px;
+}
