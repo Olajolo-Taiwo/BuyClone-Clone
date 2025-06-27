@@ -62,7 +62,6 @@ a{text-decoration: none;
   color: white;
 }
 
-/* Base Reset */
 body, ul {
   margin: 0;
   padding: 0;
@@ -169,7 +168,7 @@ body.menu-open .logo img {
 /* Sidebar Styles */
 #sidebar {
   position: fixed;
-  top: 70px; /* height of header + some padding */
+  top: 70px;
   left: 0;
   bottom: 0;
   width: 280px;
@@ -278,7 +277,6 @@ body.menu-open .logo img {
     margin-right: 5px;
   }
 }
-/* Base Reset */
 
 /*HOME SECTION STYLES*/
 .home-section {
