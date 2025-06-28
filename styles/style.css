@@ -1758,4 +1758,14 @@ footer .subscribe {
   user-select: none;
 }
 
+@media (max-width:480px) {
+  .faq-section{
+  padding: 30px 0;
+   width: 95%;}
+   .faq-con {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+}
 
