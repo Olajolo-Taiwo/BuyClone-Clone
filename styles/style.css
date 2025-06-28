@@ -799,7 +799,7 @@ margin-right: 80px;
 .roadmap dt {
   position: relative;
   margin-top: 40px;
-  padding-left: 35px;
+  padding-left: 55px;
   font-size: 18px;
   color: rgb(37, 37, 37);
 }
@@ -824,6 +824,7 @@ margin-right: 80px;
   color: #505050;
   line-height: 26px;
   margin-bottom: 0;
+  padding-left: 20px;
   margin-top: 15px;
 }
 .roadmap dl:before,
