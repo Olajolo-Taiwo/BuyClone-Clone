@@ -1,5 +1,3 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
 html, body{
   width: 100%;
@@ -1016,7 +1014,7 @@ margin-right: 80px;
 .data-section {
   color: #fff;
   padding: 120px 20px;
-  background: url("/assets/section-bg3.jpg"), linear-gradient(to right, rgb(110, 175, 255, 0.3), rgb(213, 89, 255, 0.3));
+  background: url("/assets/section-bg3.jpg") 0, linear-gradient(to right, rgb(110, 175, 255, 0.3), rgb(213, 89, 255, 0.3));
   background-size: cover;
   background-blend-mode: overlay;
   display: grid;
@@ -1419,6 +1417,7 @@ textarea {
   border-radius: 50px;
   margin-bottom: 20px !important;
   font-size: 1em;
+  resize: none;
 }
 
 textarea {
