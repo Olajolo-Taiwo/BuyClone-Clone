@@ -6,8 +6,10 @@ body {
   overflow-x: hidden;
 }
 
-section{
-  width: 90%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -21,9 +23,6 @@ body {
   font-style: normal;
   font-variation-settings: "wdth" 100;
   line-height: 1.5;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 a {
