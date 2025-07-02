@@ -513,9 +513,11 @@ body.menu-open .logo img {
 .template-section,
 .get-started-section {
   line-height: 1.8;
+  max-width: 90%;
+  margin: auto;
 }
 
-.template-section {
+.template-bg {
   background-color: rgb(248, 248, 254);
 }
 
@@ -628,24 +630,16 @@ body.menu-open .logo img {
 .offers {
   list-style: none;
   display: flex;
-  /* gap: 20px; */
   border: 2px solid rgb(100, 125, 238);
   border-radius: 50px;
   width: fit-content;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  /* background-color: white; */
+  margin: 30px auto;
   background-color: rgb(248, 247, 253);
-}
-
-.tab {
-  margin-right: 0 18px;
-  margin-top: 50px;
 }
 
 .tab-item {
   text-align: center;
-  padding: 10px 30px;
+  padding: 10px 25px;
 }
 
 .tab-item:hover {
@@ -750,7 +744,10 @@ body.menu-open .logo img {
     justify-content: center;
     border: 3px solid rgb(100, 125, 238);
   }
-
+.tab-item {
+  text-align: center;
+  padding: 10px 45px;
+}
   .offers-item {
     text-align: center;
     padding: 40px 70px;
@@ -774,7 +771,10 @@ body.menu-open .logo img {
     border-radius: 20px;
     position: relative;
   }
-
+ .tab-item {
+  text-align: center;
+  padding: 10px 40px;
+}
   .offers::before,
   .offers::after {
     content: '';
@@ -943,7 +943,6 @@ body.menu-open .logo img {
 .features-container {
   display: flex;
   flex-direction: column;
-  padding: 40px 12px;
   background: #fff;
   align-items: center;
   text-align: center;
@@ -1019,7 +1018,10 @@ body.menu-open .logo img {
 
   .features p {
     width: auto;
-
+  }
+  .it-is-safe-section{
+  width: 80%;
+  margin: auto;
   }
 }
 
@@ -1285,6 +1287,7 @@ body.menu-open .logo img {
   justify-content: center;
   max-width: 1200px;
   margin: auto;
+  margin-bottom: 80px;
 }
 
 .card {
@@ -1363,9 +1366,6 @@ body.menu-open .logo img {
   bottom: -20px;
 }
 
-.body-box {
-  margin: 0 20px;
-}
 
 .contact-section {
   position: relative;
@@ -1374,8 +1374,16 @@ body.menu-open .logo img {
   height: 100%;
   box-sizing: border-box;
   margin-bottom: 50px;
+  width: 90%;
+  margin:50px auto ;
 }
+@media (max-width:786px) {
+  .contact-section{
+  width: 100%;
+  margin:50px auto ;
+  }
 
+}
 .contact-title-section {
   text-align: center;
   margin-bottom: 40px;
@@ -1764,9 +1772,11 @@ footer .subscribe {
 }
 
 /*FAQ SECTION*/
+.faq-bg{ background-color: #f9f9f9;}
 .faq-section {
-  background-color: #f9f9f9;
   padding: 30px 0;
+  width: 90%;
+  margin: auto;
 }
 
 .sub p {
@@ -1828,84 +1838,4 @@ footer .subscribe {
   font-size: 24px;
   color: #666;
   user-select: none;
-}
-
-section,
-.home-section,
-.template-section,
-.get-started-section,
-.roadmap-section,
-.how-it-works-section,
-.features-container,
-.teemplate-section,
-.team,
-.data-section,
-.advisor-section,
-.about-section,
-.card-section,
-.contact-section,
-.faq-section {
-  padding: 80px 100px;
-  box-sizing: border-box;
-}
-
-
-.home-section,
-.template-section,
-.get-started-section,
-.roadmap-section,
-.how-it-works-section,
-.features-container,
-.teemplate-section,
-.team,
-.data-section,
-.advisor-section,
-.about-section,
-.card-section,
-.contact-section,
-.faq-section {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (max-width: 900px) {
-
-  section,
-  .home-section,
-  .template-section,
-  .get-started-section,
-  .roadmap-section,
-  .how-it-works-section,
-  .features-container,
-  .teemplate-section,
-  .team,
-  .data-section,
-  .advisor-section,
-  .about-section,
-  .card-section,
-  .contact-section,
-  .faq-section {
-    padding: 40px 30px;
-  }
-}
-
-@media (max-width: 600px) {
-
-  section,
-  .home-section,
-  .template-section,
-  .get-started-section,
-  .roadmap-section,
-  .how-it-works-section,
-  .features-container,
-  .teemplate-section,
-  .team,
-  .data-section,
-  .advisor-section,
-  .about-section,
-  .card-section,
-  .contact-section,
-  .faq-section {
-    padding: 25px 10px;
-  }
 }
